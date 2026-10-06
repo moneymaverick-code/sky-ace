@@ -1,0 +1,169 @@
+스카이 에이스 (Sky Ace) — (주)옵시드 머니매버릭
+
+[글꼴]
+- Jua (주아체) — Woowahan Brothers. SIL Open Font License 1.1 (같은 폴더 Fonts/OFL-Jua.txt). 출처: Google Fonts
+
+[3D 모델 · 지형 · 효과 · 아이콘]
+- 옛 그림(실사 끄기 -noreal 길)의 비행기·적·보스·지형·나무·집·항공모함·파티클 텍스처·UI 아이콘: 이 게임 코드가 직접 만든 것
+- 0.3.0 실사 그림의 외부 소재는 아래 칸들에 제작자·주소·라이선스·수정 내용을 적었다(원작 제목은 실존 기종 이름이 많아 적지 않음 — CC BY 4.0 은 제목 표기를 요구하지 않음)
+
+[소리 · 음악]
+- 배경음악(메뉴·전투·보스)·징글·대부분의 효과음: 코드로 합성
+- 0.3.0 에서 바꾼 녹음 효과음(기관총·대포·폭발·금속 맞음·상점)은 아래 [갈래 F]·[갈래 S] 칸 참고
+
+[엔진]
+- Unity 6 (6000.6.3f1), Universal Render Pipeline
+
+[실사 1차(시험판에서 넘어옴) 배경 소재 — 세로 1탄·가로 1탄]
+- 하늘(HDRI, CC0 1.0 · Poly Haven): "kloofendal_43d_clear_puresky" by Greg Zaal — https://polyhaven.com/a/kloofendal_43d_clear_puresky
+  · 수정: 윗반구만 잘라 해 원반을 눌러 두고(게임 셰이더가 해를 다시 그림) 2048×512 RGBM PNG 로 변환
+- 하늘(HDRI, CC0 1.0 · Poly Haven): "syferfontein_18d_clear_puresky" by Greg Zaal, Jarod Guest — https://polyhaven.com/a/syferfontein_18d_clear_puresky
+  · 수정: 같은 방법, 4096×1024 RGBM PNG
+- 땅 텍스처(CC0 1.0 · Poly Haven, 색·법선 2K → 1024 로 줄임):
+  · "coast_sand_01" by Rob Tuytel — https://polyhaven.com/a/coast_sand_01 (모래)
+  · "aerial_rocks_04" by Rob Tuytel — https://polyhaven.com/a/aerial_rocks_04 (풀밭)
+  · "aerial_grass_rock" by Rob Tuytel — https://polyhaven.com/a/aerial_grass_rock (풀밭2·큰 얼룩)
+  · "aerial_rocks_02" by Rob Tuytel — https://polyhaven.com/a/aerial_rocks_02 (바위 윗면)
+  · "aerial_beach_01" by Rob Tuytel — https://polyhaven.com/a/aerial_beach_01 (바다 밑 모래)
+  · "rock_face_03" by Dario Barresi, Rico Cilliers — https://polyhaven.com/a/rock_face_03 (절벽)
+- 물 거품: "Foam002" (ambientCG, CC0 1.0) — https://ambientcg.com/view?id=Foam002 · 수정: 512 흑백으로 줄임(상상월드 정리본에서 복사)
+- 물결 법선 2장: (주)옵시드 자체 생성(상상월드 프로젝트의 FFT 물결 생성 결과 복사)
+- 숲 지붕 사진(위에서 본 열대 숲): (주)옵시드 자체 생성(OpenAI codex 구독 이미지 생성, 26.10.5) · 수정: 이음매 없게 섞고 법선 지도 계산
+- 구름 그림(3D 구름 굽기)·구름 그림자 노이즈: (주)옵시드 자체 생성(파이썬 무료 로컬 계산)
+- 나무 모델: 제작자 kobaltsecond6c7d6150917a4267 (Sketchfab/Objaverse, CC BY 4.0) — https://sketchfab.com/3d-models/46f83ec5f6c04abf9d509c1070f67d1e
+  · 수정: 상상월드 정리본의 줄인 판(LOD2, 1,031삼각형)을 한 덩어리로 합침, 잎 텍스처 묶음(1024), 줄기는 평균 색으로 바꿈, 키 맞춤
+
+[실사 1차(시험판에서 넘어옴) 비행기·무기·대장·효과 소재 — 머스탱·적 전투기 2·강철 상어·미사일·조종석]
+- 내 비행기 머스탱: 제작자 Terminal-NJ (sketchfab.com/Din-Gabisi) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/fb4c5b00a7de40a2a8222ec3d049f0e8
+  · 수정: 프로펠러 분리, 착륙 바퀴 지움, 국가 표식·격추 표시·기체 번호·스티커를 텍스처에서 지움, 삼각형 39,580→27,822, 게임 크기로 맞춤, 꾸미기 색 칸 마스크(자체 제작)를 더해 도장 색을 바꿀 수 있게 함
+- 적 전투기: 제작자 Renafox (sketchfab.com/kryik1023) — CC BY 4.0 — https://sketchfab.com/3d-models/6977b871f06341a394811e9a04e0a16a
+  · 수정: 프로펠러 분리, 착륙 바퀴 지움, 게임 크기로 맞춤, 게임에서 적 도장 색을 곱함
+- 적 전투기(붉은 에이스): 제작자 Saman Salili (sketchfab.com/samansalili) — CC BY 4.0 — https://sketchfab.com/3d-models/51fd2e42ae5445788c15f00fe34729d2
+  · 수정: 프로펠러 분리, 착륙 바퀴 지움, 삼각형 201,969→9,820, 게임 크기로 맞춤, 색 살짝 붉게
+- 세로 1탄 대장 '강철 상어' 전함: 제작자 全斗焕 (sketchfab.com/lxyun_2) — CC BY 4.0 — https://sketchfab.com/3d-models/d3087bb4f55848b4b0eb987f59357bba
+  · 수정: 삼각형 813,422→57,751, 텍스처 89장을 한 장(2048)으로 묶음, 포탑 3개·함교를 떼어 게임 부위(앞 포탑·뒤 포탑·미사일 발사대·함교)로 씀, 게임 크기로 맞춤
+- 내 편 미사일: 제작자 Pippa (sketchfab.com/Planetrix23) — CC BY 4.0 — https://sketchfab.com/3d-models/62b79b0f76e44684ad43adcc2ae3cdb9 · 수정: 앞 방향 돌림, 텍스처 256, 게임 크기로 맞춤
+- 적 미사일: 제작자 rickslash (sketchfab.com/rickslash) — CC BY 4.0 — https://sketchfab.com/3d-models/caaf15b49bac4144b6c6be577c2b872a · 수정: 텍스처 256, 게임 크기로 맞춤
+- 폭발 불덩이·연기 뭉치·검은 연기·물기둥·연기 꼬리·총구 섬광·예광탄·충격파·파편 그림, 프로펠러 흐린 원판·앞유리 금 그림: (주)옵시드 자체 제작(코드로 생성)
+- 1인칭 조종석 계기판 그림: (주)옵시드 자체 생성(OpenAI codex 구독 이미지 생성, 26.10.5) 후 위 절반 투명 처리
+
+[실사 2차(26.10.6) — 적 헬기·폭격기·초계정·구축함·바다뱀·격납고·바다·구름]
+- 적 공격 헬기: 제작자 Ashley Aslett (sketchfab.com/AshleyAslett) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/bb65bdfde2c54007a52dfbe1d91d930d
+  · 수정: 붉은 별(국가 표식)·붉은 번호·부대 문양을 텍스처에서 지움, 착륙 바퀴 지움, 큰 회전날개·꼬리 회전날개 분리, 삼각형 35,315→9,996, 게임 크기로 맞춤
+- 적 쌍발 폭격기: 제작자 helijah (sketchfab.com/helijah) — CC BY 4.0 — https://sketchfab.com/3d-models/a173584ff087441098322ce242b7e9a1
+  · 수정: 국가 표식(십자)을 텍스처에서 지움, 조종석 안 계기·내부 지움, 내린 바퀴 지움, 프로펠러 2개 분리, 텍스처를 한 장으로 묶음, 삼각형 54,841→9,996, 게임 크기로 맞춤
+- 적 초계정: 제작자 _Muzaev (sketchfab.com/_Muzaev) — CC BY 4.0 — https://sketchfab.com/3d-models/5824ad9e57d04822aa176f0f08cf7b4f
+  · 수정: 국기(깃발 부품) 지움, 텍스처를 한 장으로 묶음, 게임 크기로 맞춤
+- 적 구축함: 제작자 everlasting17th (sketchfab.com/everlastinggrey) — CC BY 4.0 — https://sketchfab.com/3d-models/b37939147c854e61857f5b248f9efd29
+  · 수정: 군함기(깃발 부품)·승조원·줄·작은 난간 지움, 텍스처를 한 장으로 묶음, 삼각형 140,199→10,000, 게임 크기로 맞춤
+- 가로 1탄 대장 '바다뱀' 잠수함: 제작자 Artech (sketchfab.com/ArtechStudio) — CC BY 4.0 — https://sketchfab.com/3d-models/abd6a2cd5fe14f6baa16e64c2d20f317
+  · 수정: 높은 돛대 끝 지움, 길이 방향으로 머리·마디 3개로 썰어 게임 부위로 씀, 삼각형 88,906→39,998, 게임 크기로 맞춤
+  (위 5개 모델 라이선스는 스케치팹 공개 API 로 26.10.6 다시 확인 — 모두 CC Attribution)
+- 격납고 배경(HDRI, CC0 1.0 · Poly Haven): "Small Hangar 01" by Sergej Majboroda — https://polyhaven.com/a/small_hangar_01
+  · 수정: 2K 전체 구 + 8K 에서 카메라가 보는 칸만 잘라 RGBM PNG 로 변환, 반사용 윗반구
+- 격납고 바닥(텍스처, CC0 1.0 · Poly Haven): "Hangar Concrete Floor" by Dimitrios Savva — https://polyhaven.com/a/hangar_concrete_floor (색·법선 1K)
+- 물결 법선 2장(2차 교체): (주)옵시드 자체 생성(필립스 스펙트럼 FFT, 파이썬 무료 로컬 계산)
+- 사진 구름 카드(세로·조종석 한낮 / 가로 늦은 오후): (주)옵시드 자체 생성(OpenAI codex 구독 이미지 생성, 26.10.5 소재 담당) · 수정: 검은 바탕에서 밝기로 투명도를 뽑고 가장자리 색을 정리해 2x2 묶음
+
+[실사 3차(26.10.6) — 숨은 보물 등대·폭발·물보라·코인·적 탄·절벽]
+- 세로 1탄 숨은 보물 등대: 제작자 Troublesome (sketchfab.com/spospider) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/lighthouse-3a479e4262384bbb95ff4058565fa6ea
+  · 수정: 구름·새·바다·풀·밧줄·조개 부품 지움, 바닷속 바위 잘라 냄, 재질 10개 텍스처를 한 장(2048, 색·법선)으로 묶음, 삼각형 101,114→13,999, 게임 크기로 맞춤, 꼭대기에 게임의 황금 톱니를 얹음
+  (라이선스는 스케치팹 공개 API 로 26.10.6 확인 — CC Attribution · Objaverse 색인 경유 Hugging Face allenai/objaverse 에서 받음)
+- 가로 1탄 절벽 바위(2K로 올림): Poly Haven "rock_face_03"(CC0, 위 항목과 같은 소재) — 2048 으로 사용
+- 금화·적 불꽃 탄·물 위 거품 고리·격납고 전시대: (주)옵시드 자체 제작(코드로 생성)
+- 사진 같은 폭발 불덩이·검은 연기·물보라(2x2 묶음 3장): (주)옵시드 자체 생성(OpenAI codex 구독 이미지 생성, 26.10.6) · 수정: 검은/녹색 바탕에서 투명도를 뽑고 녹색 번짐을 지워 2x2 묶음(tools/real/r3/prep_fx.py)
+
+==== 0.3.0 정식 추가 소재 ====
+
+[0.3.0 환경 소재 — 갈래 E]
+- 세로 2탄 마을 집 6채(CC BY 4.0 https://creativecommons.org/licenses/by/4.0/ · 스케치팹 공개 API 로 26.10.6 확인, Objaverse 색인 경유 Hugging Face allenai/objaverse 에서 받음)
+  · Yury Misiyuk (sketchfab.com/Tim0) — https://sketchfab.com/3d-models/19a1121bab5a4aaaad4d973abe5b61cb
+  · yanix (sketchfab.com/yanix) — https://sketchfab.com/3d-models/e2bfb782bd2d4aa2af7dd8d7c37e08e4
+  · andrewriddle (sketchfab.com/andrewriddle) — https://sketchfab.com/3d-models/1d0b768a8e2449de990b3f69f94c5db6
+  · MaX3Dd (sketchfab.com/MaX3Dd) — https://sketchfab.com/3d-models/ee792a21ec6744d9a5488118b1a88750
+  · jimbogies (sketchfab.com/jimbogies) — https://sketchfab.com/3d-models/c9ef0a360eff405682015c8813eee41d
+  · Raphael Escamilla (sketchfab.com/Raffey) — https://sketchfab.com/3d-models/442eb96d05a24a3eb3325da990147264
+  · 수정: 부품 합침, 삼각형 줄임(최대 11,539→4,729), 텍스처 한 장으로 다시 구움(512), 게임 크기로 줄임
+- 바위 스캔(CC0 1.0 · Poly Haven): Rob Tuytel — https://polyhaven.com/a/coast_rocks_05 · Rob Tuytel, Rico Cilliers — https://polyhaven.com/a/coastal_cliff_01 · Rob Tuytel — https://polyhaven.com/a/coastal_cliff_02
+  · Dario Barresi, Rico Cilliers — https://polyhaven.com/a/namaqualand_cliff_02 · Dario Barresi, Rico Cilliers — https://polyhaven.com/a/mountainside
+  · 수정: 삼각형 줄임(사진 텍스처 1K 유지), 가로 2탄은 붉은 사암빛으로 색 곱함
+- 하늘(HDRI, CC0 1.0 · Poly Haven): Jarod Guest, Sergej Majboroda — https://polyhaven.com/a/industrial_sunset_02_puresky (가로 3탄 노을) · Greg Zaal, Dimitrios Savva, Jarod Guest — https://polyhaven.com/a/belfast_sunset_puresky (타이틀 비행기 반사)
+  · 수정: 윗반구만 RGBM PNG 로 변환
+- 땅 텍스처(CC0 1.0 · Poly Haven, 1K 로 줄임): Rob Tuytel — coral_ground_02 · dirt_aerial_02 · aerial_asphalt_01 / Amal Kumar — red_laterite_soil_stones · cracked_red_ground · rocky_terrain_03 / Rohit Seervi — red_sand / Dario Barresi — sandy_gravel_02 / Greg Zaal, Dario Barresi — rock_face / Dimitrios Savva — coral_fort_wall_02 / Dimitrios Savva, Rico Cilliers — rock_pitted_mossy (모두 https://polyhaven.com/a/<이름>)
+- 농지·마을 항공 타일 · 산호초 타일 · 협곡 원경 · 하늘섬 원경 · 지도 배경: (주)옵시드 자체 생성(OpenAI codex 구독 이미지 생성, 26.10.6) · 수정: 협곡 원경 하늘을 투명으로 뽑음, 하늘섬 원경에서 떠 있는 섬 4개를 오려 카드로·판에는 구름바다 띠만 남김(tools/real/prep_env.py)
+- 타이틀 노을 바다 배경: (주)옵시드 자체 렌더(블렌더 바다 + Poly Haven CC0 belfast_sunset_puresky)
+- 도로 점선·마을 마당: (주)옵시드 자체 제작(코드로 생성)
+
+[0.3.0 비행기·적·대장 모델 — 갈래 M]
+- 공통 수정: 착륙 바퀴·매단 무장 지움 · 재질을 새 UV 한 장으로 다시 구움 · 앞 +Z·위 +Y 로 돌리고 게임 크기로 맞춤 · 꾸미기 도장 칸(마스크) 만듦 · 유니티 좌표로 바꿈(tools/real/conv_final.py)
+  (라이선스는 스케치팹 공개 API 로 26.10.6 확인 — CC Attribution · Objaverse 색인 경유 Hugging Face allenai/objaverse 에서 받음. 원작 제목은 실존 기종 이름이라 적지 않음 — CC BY 4.0 은 제목 표기를 요구하지 않음)
+- 내 비행기 썬더 제트: 제작자 manilov.ap (sketchfab.com/manilov.ap) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/e1cd8975123a47599423e4da19a8910b
+  · 수정: 국가 표식·부대 띠·글자·기체 번호 지움(소재 단계 + 게임에서 꼬리 파랑 띠·작은 기호 한 번 더 지움); 삼각형 22,394→12,266
+- 내 비행기 타이탄 폭격기: 제작자 manilov.ap (sketchfab.com/manilov.ap) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/15d99f2396f7464cb2fb4098f2c234af
+  · 수정: 국가 표식·부대 글자·일련번호 지움; 삼각형 76,720→19,891
+- 내 비행기 라이트닝: 제작자 manilov.ap (sketchfab.com/manilov.ap) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/7eab500310604fd996b116f9cd7520a7
+  · 수정: 국가 표식·줄무늬 덮음, 꾸미기 칸을 몸체 전체로 넓힘; 삼각형 114,089→19,886
+- 내 비행기 스위프트: 제작자 manilov.ap (sketchfab.com/manilov.ap) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/554c430e2df94023923b1aa12e0a912a
+  · 수정: 국가 표식·부대 문양·국기 띠·글자 지움; 삼각형 27,450→13,029
+- 내 비행기 호넷: 제작자 manilov.ap (sketchfab.com/manilov.ap) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/3bc9b90cc97a40a6bfc13237329ce51b
+  · 수정: 작은 글자·표식 지움(게임에서 꼬리 일련번호 한 번 더 지움); 삼각형 127,628→22,939
+- 내 비행기 펠리컨: 제작자 manilov.ap (sketchfab.com/manilov.ap) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/f6014246a64c40e99b70f6fc406afa4d
+  · 수정: 국가 표식 지움; 삼각형 60,183→19,399
+- 내 비행기 블리츠: 제작자 manilov.ap (sketchfab.com/manilov.ap) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/8fec9884fe07476bbcaa34d9521726c4
+  · 수정: 국가 표식·부대 글자·일련번호 지움; 삼각형 78,504→19,399
+- 내 비행기 팬텀: 제작자 manilov.ap (sketchfab.com/manilov.ap) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/a9be2ca923aa44809194613209810d06
+  · 수정: 국가 표식 지움; 삼각형 81,597→14,510
+- 내 비행기 불사조: 제작자 manilov.ap (sketchfab.com/manilov.ap) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/41f899ab2bef4cc3a1a40929569d5f96
+  · 수정: 국가 표식·부대 글자·일련번호·부대 문양 지움; 삼각형 24,600→16,809
+- 내 비행기 바론: 제작자 manilov.ap (sketchfab.com/manilov.ap) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/383b5933969f46668c2efdac9193f591
+  · 수정: 국가 표식·제조사 글씨 지우고 바탕색으로 메움, 바퀴축 날개 지움; 삼각형 39,539→19,476
+- 내 비행기 에이스 X: 제작자 manilov.ap (sketchfab.com/manilov.ap) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/01b4128f65094d899e10c659e60f0858
+  · 수정: 국가 표식·꼬리 글자 지움; 삼각형 68,836→21,338
+- 적 제트기: 제작자 manilov.ap (sketchfab.com/manilov.ap) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/bff0bcb784fc495db222ec81f1562d09
+  · 수정: 국가 표식·기체 번호 지움, 적 도장색 칸; 삼각형 22,341→9,700
+- 적 하늘 전함: 제작자 manilov.ap (sketchfab.com/manilov.ap) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/3ca2f507a0a749799e16a4eee12e456c
+  · 수정: 국가 표식·글자·부대 문장 지움, 등 포탑 2(요새 포탑 메시) 붙임; 삼각형 32,051→9,700
+- 적 전차: 제작자 Artem Goyko (sketchfab.com/Artem.Goyko) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/f23cf9b8822a4ad48f068a2c51c44848
+  · 수정: 포탑을 따로 떼어 내 비행기를 겨눔; 삼각형 40,170→9,515
+- 적 대공포: 제작자 Daniel_Bakunin (sketchfab.com/Daniel_Baku) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/ae14b1a65be444f0a01f41844e142529
+  · 수정: 포를 따로 떼어 내 비행기를 겨눔; 삼각형 7,825→7,825
+- 적 벙커: 제작자 Tactical_Beard (sketchfab.com/Tactical_Beard) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/65a0b82826f440d9aef3181946881c2b
+  · 수정: 삼각형 832→832
+- 대장 철갑 거북(초중전차 계열): 제작자 Herdyn (sketchfab.com/Tomrs) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/558a2e0263454ce7b62dbd48dfb4ba23
+  · 수정: 원본 무텍스처 → Poly Haven green_metal_rust(CC0) 입혀 구움, 주포탑 따로, 윗면 법선 다듬음, 부포탑 = 대공포 메시; 삼각형 157,120→48,545
+- 대장 천둥고래(무장 비행선): 제작자 CGArt (sketchfab.com/hungryscroodge) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/7b142df10734454da1fc8c98a2ccae89
+  · 수정: 선체 문장 지움, 회전날개·프로펠러 따로 돌게, 곤돌라·등 포탑 = 요새 포탑 메시; 삼각형 34,978→25,216
+- 대장 그림자 요새(조립: 바위섬 + 3연장 포탑 2 + 레이더 + 벙커 2) · 요새·비행선·하늘 전함 포탑:
+  · 그림자 요새 3연장 포탑 2 + 천둥고래 곤돌라·등 포탑 3 + 하늘 전함 등 포탑 2: 제작자 Pippa (sketchfab.com/Planetrix23) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/eeab59eb7a0048caa96796728699facc
+  · 그림자 요새 레이더: 제작자 joe_carrot (sketchfab.com/joe_carrot) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/ed6850e61792430581c8f9851fb7b4c5
+  · 그림자 요새 바위섬: 제작자 Rob Tuytel — CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/) — https://polyhaven.com/a/coast_rocks_05
+  · 수정: 섬 위에 부품을 놓아 조립, 부위마다 재질 따로, 게임 크기로 맞춤(삼각형 46,265→33,132)
+- 대장 사막 장갑열차(조립: 장갑 기관차 + 열차포 칸 3):
+  · 사막 장갑열차 기관차: 제작자 Nadir Alishly (sketchfab.com/nadiralishly) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/8f781c2429d54d338cd60065a5107796
+  · 사막 장갑열차 열차포 칸: 제작자 trolosqlfod (sketchfab.com/trolosqlfod) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/73c19fe0cc4943948da076762682b4da
+  · 수정: 열차포 칸에 Poly Haven green_metal_rust(CC0) 입혀 구움, 기관차 윗면 법선 다듬음, 열차포 칸을 3칸으로 이어 붙임, 게임 크기로 맞춤
+- 표식 한 번 더 지움(26.10.6 6방향 확대 검사): 에이스 X·불사조·블리츠·팬텀·하늘 전함 텍스처에 남아 있던 국가 표식·부대 글자·기체 번호를 둘레 색으로 메움(tools/real/conv_final.py MARK_BOXES)
+- 격납고 정비 리프트·프로펠러 회전 원판: (주)옵시드 자체 제작(코드로 생성)
+
+[0.3.0 총알·폭발·화면 효과·소리 — 갈래 F]
+- 융단 폭격 실사 폭탄(3D 모델): Pippa (sketchfab.com/Planetrix23) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/c6f4e1adb6f940ae83d0386e79d5ca1c
+  · 수정: 몸통 글씨·번호 지움, 재질 여러 개를 한 장(512px, 색·가려짐·거칠기·금속·법선)으로 다시 구움, 앞 방향·크기를 게임에 맞춤(라이선스는 스케치팹 공개 API 로 26.10.6 확인)
+- 기관총 소리 2종·대포 소리·폭발 소리 3종·대공포 폭연 소리: rubberduck (opengameart.org/users/rubberduck) — CC0 1.0 — https://opengameart.org/content/25-cc0-bang-firework-sfx · https://opengameart.org/content/100-cc0-sfx
+  · 수정: 자르기·저음·울림·압축, 게임의 다른 소리와 같은 크기로 맞춤(모노 ogg)
+- 총알이 금속에 맞는 소리 2종: Kenney (kenney.nl) — CC0 1.0 — https://kenney.nl/assets/impact-sounds
+  · 수정: 자르기·크기 맞춤(모노 ogg)
+- 엔진 소리(프로펠러·제트)·기관총 연사 고리: (주)옵시드 자체 제작(코드 합성)
+- 사진풍 총구 섬광·흙먼지·대공포 검은 연기·포탄 불꽃 꼬리·렌즈 먼지: (주)옵시드 자체 생성(OpenAI codex 구독 이미지 생성, 26.10.6) · 수정: 검은/녹색 바탕에서 투명도를 뽑아 2x2·4x1 묶음, 꼬리는 알파 판으로 바꿈
+- 예광탄 줄 3종·금속 불꽃 4x4·렌즈 플레어(별빛·고리·유령 빛·빛 줄)·열 아지랑이 법선·빛 줄기·탄피·적 탄 머리·에너지 빔: (주)옵시드 자체 제작(코드로 생성)
+
+[0.3.0 상점 아이콘·소리 — 갈래 S]
+- 상점 부품 6종·소모품 5종 아이콘(Resources/Shop/part_*·item_*.png): (주)옵시드 자체 생성(OpenAI codex 구독 이미지 생성, 26.10.6) · 수정: 녹색/검은 바탕에서 투명도 뽑기·녹색 번짐 지우기·칸 맞춤
+- 상점 소리 shop_buy·shop_denied·shop_equip_clank: Kenney "Interface Sounds"·"Impact Sounds" (kenney.nl) — CC0 (https://kenney.nl/assets/interface-sounds , https://kenney.nl/assets/impact-sounds) · 수정: 자르기·저역·메아리·압축(ogg 44.1kHz 모노)
+- 상점 소리 shop_equip_ratchet: rubberduck "100 CC0 SFX" (opengameart.org/users/rubberduck) — CC0 (https://opengameart.org/content/100-cc0-sfx) · 수정: 자르기·저역·메아리·압축(ogg 44.1kHz 모노)
+
+[0.3.0 정식 수리(26.10.6) — 드론·보석·적 탄·필살기 실사 톤]
+- 윙맨 드론·레이저 드론(무인기 3D 모델): 제작자 IProZenoN (sketchfab.com/IProZenoN) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/fabe963feb354c5584b51f9c470c3f7e
+  · 수정: 날개 아래 무장·내린 착륙 바퀴·다리 지움, 국가 표식·부대 휘장·기체 번호·글자·띠를 바탕 회색으로 덮음, 텍스처 한 장 512px, 프로펠러를 텍스처 회색 칸으로, 앞 +Z·위 +Y·게임 크기(날개폭 1.2)로 돌리고 맞춤, 유니티 좌표로 바꿈(tools/real/conv_drone.py)
+  (라이선스는 스케치팹 공개 API 로 26.10.6 확인 — CC Attribution · Objaverse 색인 경유 Hugging Face allenai/objaverse 에서 받음. 원작 제목은 실존 기종 이름이라 적지 않음 — CC BY 4.0 은 제목 표기를 요구하지 않음)
+- 적 탄 머리(포탄 탄두·불꽃 심·적 예광탄·에너지 탄)·깎은 보석·바론 에너지 구: (주)옵시드 자체 제작(코드로 생성)
+- 불사조 필살기 불새·불꽃 띠·바론 필살기 금속 파편: 위 [실사 3차] 사진 불덩이 묶음·[갈래 F] 파편 그림을 파티클로 다시 씀(새 소재 없음)
