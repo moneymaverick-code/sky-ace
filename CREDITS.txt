@@ -167,3 +167,34 @@
   (라이선스는 스케치팹 공개 API 로 26.10.6 확인 — CC Attribution · Objaverse 색인 경유 Hugging Face allenai/objaverse 에서 받음. 원작 제목은 실존 기종 이름이라 적지 않음 — CC BY 4.0 은 제목 표기를 요구하지 않음)
 - 적 탄 머리(포탄 탄두·불꽃 심·적 예광탄·에너지 탄)·깎은 보석·바론 에너지 구: (주)옵시드 자체 제작(코드로 생성)
 - 불사조 필살기 불새·불꽃 띠·바론 필살기 금속 파편: 위 [실사 3차] 사진 불덩이 묶음·[갈래 F] 파편 그림을 파티클로 다시 씀(새 소재 없음)
+
+[0.4.0 30탄 — 사막 기지·설산 요새 실사 환경, 탄별 하늘]
+- 땅 텍스처(CC0 1.0 · Poly Haven, 색 2K → 1024 로 줄임 · 모두 https://polyhaven.com/a/<이름>):
+  · Rob Tuytel — aerial_beach_02(사막 모래 언덕) · dirt_aerial_03(단단한 마른 땅) · aerial_ground_rock(자갈 바위밭·메사 윗면) · snow_02(눈밭) · snow_field_aerial(바위 비치는 눈밭) · snow_03(눈 섞인 바위 땅) · snow_05(바퀴 자국 눈길, 512)
+  · Amal Kumar — marble_cliff_02(사막 메사 절벽)
+- 얼음 호수 텍스처: "Ice003" (ambientCG, CC0 1.0) — https://ambientcg.com/view?id=Ice003 · 수정: 1024 로 줄임
+- 사막 덤불·자갈 큰 무늬, 눈 덮인 침엽수림(위에서 본 사진): (주)옵시드 자체 생성(OpenAI codex 구독 이미지 생성, 26.10.22) · 수정: 이음매 없게 섞고 1024 로 줄임
+- 하늘(HDRI, CC0 1.0 · Poly Haven, 윗반구만 2048×512 RGBM PNG 로 변환 · 모두 https://polyhaven.com/a/<이름>):
+  · Greg Zaal — kloofendal_misty_morning_puresky(안개 아침) · kloofendal_overcast_puresky(흐림·폭풍·눈보라)
+  · Greg Zaal, Jarod Guest — qwantani_dusk_2_puresky(해 질 녘) · qwantani_moonrise_puresky(달밤) · qwantani_night_puresky(별밤) · qwantani_noon_puresky(한낮) · qwantani_sunrise_puresky(새벽) · table_mountain_1_puresky(맑은 고원)
+  · Jarod Guest, Sergej Majboroda — snow_field_puresky · snow_field_2_puresky(설원)
+- 새 대장 '거대 폭격기'·'미사일 기지': 위 칸들의 실사 모델(쌍발 폭격기·대공포·벙커·해안 요새 포탑·레이더)을 다시 조합한 것(새 외부 소재 없음, 같은 라이선스·출처)
+- 눈송이·눈보라·모래바람·불티 입자: (주)옵시드 자체 제작(코드로 생성)
+
+[0.4 새 기체 4종 — 갈래 B(26.10.22)]
+(라이선스는 스케치팹 공개 API 로 26.10.22 다시 확인 — 모두 CC Attribution · Objaverse 색인 경유 Hugging Face allenai/objaverse 에서 받음)
+- 하늘 독수리(흰머리독수리 활공 자세): 제작자 Filip (sketchfab.com/filip.hans.nyberg) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/9f25e7c83840435396225970ba47b75e
+  · 수정: 재질 여러 개를 한 장(2048px, 색·가려짐·거칠기·금속)으로 다시 구움, 삼각형 144,844→약 2만, 앞 +Z·게임 크기로 맞춤, 몸통 메시에 뼈대를 코드로 심어 날갯짓
+- 타이탄 로봇(붉은 거대 메카): 제작자 Nooxy (sketchfab.com/Nooxy) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/04a7c374461d4de4918ca25f46a7efcf
+  · 수정: 옆에 따로 서 있던 큰 칼을 뺌, 앞으로 62° 숙인 '나는 자세'로 돌림, 재질 여러 개를 한 장(2048px)으로 다시 구움, 게임 크기로 맞춤, 발·등 추진기 불꽃은 코드로 붙임
+- 미스터리 UFO(빨강·검정 원반): 제작자 aptass (sketchfab.com/aptass) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/546bd866abb74a6fa12847b815be6429
+  · 수정: 삼각형 403,193→약 1만 4천, 색 재질을 한 장(2048px, 색·가려짐·거칠기·금속)으로 구움, 게임 크기로 맞춤, 회전·테두리 불빛·바닥 빛은 코드로 붙임
+- 불꽃 드래곤(날개 편 비행 자세): 제작자 LasquetiSpice (sketchfab.com/LasquetiSpice) — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://sketchfab.com/3d-models/eca98cf6cd084c1596cecf716e110c29
+  · 수정: 비행 애니메이션 첫 자세를 메시에 굽고 뼈대·애니메이션 지움, 날개막 끝 오려 내기(알파)를 포함해 한 장(2048px)으로 다시 구움, 게임 크기로 맞춤, 날갯짓은 코드 뼈대
+- 부품 강화 외형(총열·장갑판·미사일 받침·코어·빛 선·오라)·새 기체 탄 4종·필살기 4종 연출: (주)옵시드 자체 제작(코드로 생성) — 날개 밑 미사일은 위 [실사 시험판] 미사일 모델을 다시 씀
+
+[0.4 탈것 탭 확장 — 갈래 B(26.10.28)]
+- 꼬마 로봇 삐뽀·로켓 주먹 로봇·변신 제트 로봇·꼬마 로켓·문어 우주선·수정 별빛선·꿀벌 대장·하늘 고래·종이비행기·마법 빗자루·선물 열기구·무지개 유니콘(모델 12종): (주)옵시드 자체 제작(코드로 생성 — 외부 소재 없음)
+- 새 탄 8종(별·물방울·종이비행기·꿀벌 바늘·로켓 주먹·수정 조각·색종이·먹물 방울)·필살기 12종 연출·아이 모드 반짝 연출: (주)옵시드 자체 제작(코드로 생성, 기존 반짝·빛 그림을 다시 씀)
+- 아이 모드·새 필살기 소리 9종(빠밤·환호·뽁·반짝·붕붕·철썩·휘익·뾰로롱·변신): (주)옵시드 자체 제작(코드로 합성)
+- 국가 표식: 새 탈것에는 어떤 나라 표식도 넣지 않음(방침 유지)
